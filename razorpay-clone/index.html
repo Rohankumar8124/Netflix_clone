@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Razorpay Clone - Payments for Businesses</title>
+  <meta name="description" content="A front-end clone of the Razorpay homepage built with HTML, CSS and JavaScript." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,800;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement bar -->
+  <div class="announce-bar">
+    <p>Razorpay Clone &middot; Front-end demo project built with HTML, CSS and JavaScript. Not affiliated with Razorpay.</p>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">Razorpay<span class="logo-dot">.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#payments">Payments</a>
+        <a href="#banking">Banking</a>
+        <a href="#payroll">Payroll</a>
+        <a href="#partners">Partners</a>
+        <a href="#resources">Resources</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#signup" class="btn btn-primary btn-sm">Sign Up
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Power your finance,<br />grow your business</h1>
+        <p class="hero-sub">Accept payments from customers. Automate payouts to vendors and employees. Never run out of working capital.</p>
+        <div class="hero-cta">
+          <a href="#signup" class="btn btn-primary">Sign Up Now
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <button class="btn btn-ghost" id="demoBtn">Try Demo Checkout</button>
+        </div>
+        <ul class="hero-points">
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2b84ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Instant onboarding</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2b84ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> 100+ payment modes</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#2b84ea" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg> Dashboard &amp; reports</li>
+        </ul>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="hero-card card-1">
+          <div class="hc-row"><span class="hc-label">Payment received</span><span class="hc-badge">Success</span></div>
+          <div class="hc-amount">&#8377;24,500.00</div>
+          <div class="hc-sub">Order #RZP20491 &middot; UPI</div>
+        </div>
+        <div class="hero-card card-2">
+          <div class="hc-row"><span class="hc-label">Payout processed</span><span class="hc-badge badge-blue">Done</span></div>
+          <div class="hc-amount">&#8377;1,20,000.00</div>
+          <div class="hc-sub">Vendor payout &middot; IMPS</div>
+        </div>
+        <div class="hero-blob"></div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0,40 C240,90 480,0 720,30 C960,60 1200,90 1440,40 L1440,90 L0,90 Z" fill="#ffffff"/></svg>
+    </div>
+  </section>
+
+  <!-- Trust strip -->
+  <section class="trust">
+    <div class="container">
+      <p class="trust-title">Trusted by 80 lakh+ businesses across India</p>
+      <div class="trust-logos">
+        <span>ZerotoOne</span><span>BookMyTickets</span><span>UrbanServe</span><span>FoodFleet</span><span>StudyLoop</span><span>TravelKart</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Payment suite -->
+  <section class="section" id="payments">
+    <div class="container">
+      <p class="eyebrow">Accept Payments</p>
+      <h2 class="section-title">The complete payments suite</h2>
+      <p class="section-sub">Everything you need to accept, process and disburse payments, online and in person.</p>
+
+      <div class="card-grid">
+        <article class="pcard">
+          <div class="pcard-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#2b84ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg>
+          </div>
+          <h3>Payment Gateway</h3>
+          <p>Accept payments on your website or app with cards, UPI, netbanking and wallets.</p>
+          <a href="#" class="know-more">Know More <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#2b84ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71"/></svg>
+          </div>
+          <h3>Payment Links</h3>
+          <p>Create and share payment links over SMS, email or chat and get paid instantly.</p>
+          <a href="#" class="know-more">Know More <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#2b84ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+          </div>
+          <h3>Payment Pages</h3>
+          <p>Launch a hosted payment page for your store or event with zero code.</p>
+          <a href="#" class="know-more">Know More <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#2b84ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg>
+          </div>
+          <h3>Razorpay POS</h3>
+          <p>Accept in-person card and UPI payments at your store with smart terminals.</p>
+          <a href="#" class="know-more">Know More <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#2b84ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2.1l4 4-4 4"/><path d="M3 12v-2a4 4 0 014-4h14"/><path d="M7 21.9l-4-4 4-4"/><path d="M21 12v2a4 4 0 01-4 4H3"/></svg>
+          </div>
+          <h3>Subscriptions</h3>
+          <p>Automate recurring payments with UPI Autopay and card mandates.</p>
+          <a href="#" class="know-more">Know More <span aria-hidden="true">&rarr;</span></a>
+        </article>
+
+        <article class="pcard">
+          <div class="pcard-icon">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#2b84ea" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 11-9-9"/><path d="M21 3l-9 9"/><path d="M15 3h6v6"/></svg>
+          </div>
+          <h3>Smart Collect</h3>
+          <p>Auto-reconcile incoming NEFT, RTGS and IMPS transfers with virtual accounts.</p>
+          <a href="#" class="know-more">Know More <span aria-hidden="true">&rarr;</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Banking section -->
+  <section class="section banking" id="banking">
+    <div class="container banking-inner">
+      <div class="banking-text">
+        <p class="eyebrow eyebrow-light">RazorpayX Banking</p>
+        <h2 class="section-title light">Automate your business banking</h2>
+        <ul class="feature-list">
+          <li>
+            <span class="fl-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong>Current accounts</strong><p>Open a fully digital current account built for businesses.</p></div>
+          </li>
+          <li>
+            <span class="fl-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong>Instant payouts</strong><p>Pay vendors, refunds and salaries 24x7, even on bank holidays.</p></div>
+          </li>
+          <li>
+            <span class="fl-icon"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#7dd3fc" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg></span>
+            <div><strong>Corporate cards</strong><p>Control team spends with smart corporate cards and limits.</p></div>
+          </li>
+        </ul>
+        <a href="#signup" class="btn btn-light">Explore RazorpayX
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+      <div class="banking-art" aria-hidden="true">
+        <div class="dash-mock">
+          <div class="dm-head"><span></span><span></span><span></span></div>
+          <div class="dm-balance">
+            <p>Available balance</p>
+            <h4>&#8377;8,42,310.55</h4>
+          </div>
+          <div class="dm-bars">
+            <div class="bar" style="--h:45%"></div>
+            <div class="bar" style="--h:70%"></div>
+            <div class="bar" style="--h:55%"></div>
+            <div class="bar" style="--h:85%"></div>
+            <div class="bar" style="--h:65%"></div>
+            <div class="bar" style="--h:95%"></div>
+            <div class="bar" style="--h:75%"></div>
+          </div>
+          <div class="dm-row"><span>Payouts this week</span><strong>&#8377;2.4L</strong></div>
+          <div class="dm-row"><span>Collections</span><strong>&#8377;5.1L</strong></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="section stats" id="resources">
+    <div class="container stats-grid">
+      <div class="stat"><span class="stat-num" data-target="80" data-suffix="L+">0</span><p>Businesses trust us</p></div>
+      <div class="stat"><span class="stat-num" data-target="100" data-suffix="+">0</span><p>Payment modes</p></div>
+      <div class="stat"><span class="stat-num" data-target="99" data-suffix=".9%">0</span><p>Gateway uptime</p></div>
+      <div class="stat"><span class="stat-num" data-target="42" data-suffix="%">0</span><p>Higher success rate</p></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials" id="partners">
+    <div class="container">
+      <p class="eyebrow">Customer Stories</p>
+      <h2 class="section-title">Businesses that grow with us</h2>
+
+      <div class="slider" id="slider">
+        <div class="slide active">
+          <blockquote>&ldquo;Settlements are quick and the dashboard gives us everything we need to track payments across three stores.&rdquo;</blockquote>
+          <p class="slide-author">Ananya S. &middot; Founder, UrbanServe</p>
+        </div>
+        <div class="slide">
+          <blockquote>&ldquo;We moved all vendor payouts to RazorpayX and saved hours of manual bank work every single week.&rdquo;</blockquote>
+          <p class="slide-author">Rohit M. &middot; CFO, FoodFleet</p>
+        </div>
+        <div class="slide">
+          <blockquote>&ldquo;UPI Autopay doubled our subscription retention in two months. The integration took a day.&rdquo;</blockquote>
+          <p class="slide-author">Priya K. &middot; Product Lead, StudyLoop</p>
+        </div>
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta" id="signup">
+    <div class="container cta-inner">
+      <h2>Start accepting payments in minutes</h2>
+      <p>Sign up with your email and go live today. No setup fee, no annual charges.</p>
+      <a href="#" class="btn btn-primary btn-lg" id="ctaSignup">Create Free Account
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <p class="cta-note" id="pricing">Platform fees: 2% per transaction. GST extra.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="payroll">
+    <div class="container footer-grid">
+      <div class="footer-col footer-brand">
+        <a href="#" class="logo logo-light">Razorpay<span class="logo-dot">.</span></a>
+        <p>A front-end clone built for learning. All product names belong to their owners.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Accept Payments</h5>
+        <a href="#payments">Payment Gateway</a>
+        <a href="#payments">Payment Links</a>
+        <a href="#payments">Payment Pages</a>
+        <a href="#payments">Subscriptions</a>
+      </div>
+      <div class="footer-col">
+        <h5>Banking &amp; Payroll</h5>
+        <a href="#banking">RazorpayX</a>
+        <a href="#banking">Current Accounts</a>
+        <a href="#banking">Payouts</a>
+        <a href="#payroll">Payroll</a>
+      </div>
+      <div class="footer-col">
+        <h5>Company</h5>
+        <a href="#">About Us</a>
+        <a href="#">Careers</a>
+        <a href="#">Terms of Use</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Razorpay Clone. Educational project, not a real payment service.</p>
+    </div>
+  </footer>
+
+  <!-- Demo checkout modal -->
+  <div class="modal-overlay" id="demoModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Demo checkout">
+      <div class="modal-head">
+        <div>
+          <p class="modal-merchant">Demo Store</p>
+          <p class="modal-amount">&#8377;499.00</p>
+        </div>
+        <button class="modal-close" id="modalClose" aria-label="Close demo">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-tag">Razorpay Trusted Business</p>
+        <div class="modal-option"><span class="mo-dot dot-upi"></span>UPI <span class="mo-note">GPay, PhonePe, Paytm</span></div>
+        <div class="modal-option"><span class="mo-dot dot-card"></span>Card <span class="mo-note">Visa, Mastercard, RuPay</span></div>
+        <div class="modal-option"><span class="mo-dot dot-nb"></span>Netbanking <span class="mo-note">All major banks</span></div>
+        <div class="modal-option"><span class="mo-dot dot-wallet"></span>Wallet <span class="mo-note">Amazon Pay &amp; more</span></div>
+        <p class="modal-note">This is a static demo of the Razorpay checkout look. No real payment is collected.</p>
+      </div>
+      <div class="modal-foot">
+        <span class="modal-secure">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+          Secured by Razorpay Clone
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
