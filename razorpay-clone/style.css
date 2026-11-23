@@ -528,3 +528,9 @@ a { text-decoration: none; color: inherit; }
   .footer-grid { grid-template-columns: 1fr; gap: 28px; }
   .cta-inner { padding: 48px 22px; }
 }
+
+/* Honor reduced motion: show final states immediately */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-card, .slide, .modal-overlay.open, .modal { animation: none; }
+}
